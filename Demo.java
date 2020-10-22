@@ -13,7 +13,8 @@ public class Demo {
     // int[] d = {};
     // int[] e = {1, 2, 3, 4, 5};
     // int[][] all = {a, b, c, d, e};
-    System.out.print(arrayDeepToString(create2DArrayRandomized(4,10,100)).replace("}, ","},\n "));
+
+    //System.out.print(arrayDeepToString(create2DArrayRandomized(4,10,100)).replace("}, ","},\n "));
   }
   public static void printLoop(int n){
       int times  = n;
