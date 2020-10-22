@@ -13,7 +13,7 @@ public class Demo {
     // int[] d = {};
     // int[] e = {1, 2, 3, 4, 5};
     // int[][] all = {a, b, c, d, e};
-    System.out.print(arrayDeepToString(create2DArray(5,4,4)).replace("}, ","},\n "));
+    System.out.print(arrayDeepToString(create2DArrayRandomized(4,10,100)).replace("}, ","},\n "));
   }
   public static void printLoop(int n){
       int times  = n;
@@ -52,6 +52,20 @@ public class Demo {
   public static int[][] create2DArray(int rows, int cols, int maxValue) {
     int[][] result = new int[rows][cols];
     for (int row = 0; row < result.length; row++) {
+      for (int col = 0; col < result[row].length; col++) {
+        double randomnum = Math.random() * (maxValue+1);
+        result[row][col] += randomnum;
+      }
+    }
+    return result;
+  }
+
+  public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue) {
+    int[][] result = new int[rows][];
+
+    for (int row = 0; row < result.length; row++) {
+      double rancols = Math.random() * (cols+1);
+      result[row] = new int[(int)rancols];
       for (int col = 0; col < result[row].length; col++) {
         double randomnum = Math.random() * (maxValue+1);
         result[row][col] += randomnum;
