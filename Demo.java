@@ -1,11 +1,11 @@
 public class Demo {
   public static void main(String[]args) {
-    // if (args.length == 0) {
-    //   printLoop(5);
-    // } else {
-    //   int a = Integer.parseInt(args[0]);
-    //   printLoop(a);
-    // }
+    if (args.length == 0) {
+      printLoop(5);
+    } else {
+      int a = Integer.parseInt(args[0]);
+      printLoop(a);
+    }
 
     // int[] a = {1, 2, 3};
     // int[] b = {1, 2, 3, 4};
